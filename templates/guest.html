@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div class="container-fluid">
+        <br>
+        <h1 class="text-center">Guest Page</h1>
+        <hr>
+        <p>
+            Welcome to our company's internal site! You've made it this far and there's only a couple more steps. You'll
+            either need to register if you have not already registered, or you'll need to login if you have already
+            registered an account.
+        </p>
+
+        <hr>
+        <br>
+        <div class="row text-center">
+            <span>
+                <a href="{% url 'register' %}" class="btn btn-primary">Register</a>
+                <a href="{% url 'login' %}" class="btn btn-success">Login</a>
+            </span>
+        </div>
+    </div>
+
+{% endblock %}
